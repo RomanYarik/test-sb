@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const StylablePlugin = require('@stylable/webpack-plugin')
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -15,14 +16,12 @@ module.exports = {
                     typeCheck: false
                 }
             },
-            {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-            },
+            
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin(),
+        new StylablePlugin()
     ],
     devtool: 'source-map',
     resolve: {
