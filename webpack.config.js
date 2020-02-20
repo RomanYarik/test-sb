@@ -8,14 +8,14 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.tsx?$/,
-                exclude: /\.d\.ts$/,
-                loader: '@ts-tools/webpack-loader',
-                options: {
-                    typeCheck: false
-                }
-            },
+            // {
+            //     test: /\.tsx?$/,
+            //     exclude: /\.d\.ts$/,
+            //     loader: '@ts-tools/webpack-loader',
+            //     options: {
+            //         typeCheck: false
+            //     }
+            // },
             // {
             //     test: /\.css$/,
             //     use: ['style-loader', 'css-loader']
