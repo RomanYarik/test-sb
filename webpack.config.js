@@ -16,12 +16,15 @@ module.exports = {
                     typeCheck: false
                 }
             },
-            
+            // {
+            //     test: /\.css$/,
+            //     use: ['style-loader', 'css-loader']
+            // },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin(),
-        new StylablePlugin()
+        // new StylablePlugin()
     ],
     devtool: 'source-map',
     resolve: {
