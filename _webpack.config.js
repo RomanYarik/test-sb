@@ -23,7 +23,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin(),
+        // new HtmlWebpackPlugin(),
         // new StylablePlugin()
     ],
     devtool: 'source-map',
